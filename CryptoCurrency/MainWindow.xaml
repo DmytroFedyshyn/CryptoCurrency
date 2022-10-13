@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CryptoCurrency"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        WindowStartupLocation="CenterScreen"
+        Height="1300" Width="800"
+        FontFamily="/Fonts/#Inter"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        >
+        
     <Grid>
-
+        <ContentControl Content="{Binding CurrentView}"/>
     </Grid>
 </Window>
